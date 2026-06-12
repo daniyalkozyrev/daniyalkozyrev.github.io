@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniyal Kozyrev — Research Profile</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts: Playfair Display (headings) + Inter (body) + JetBrains Mono (code) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ===== CURSOR GLOW (follows mouse) ===== -->
+  <div class="cursor-glow"></div>
+
+  <!-- ===== SCROLL PROGRESS BAR ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav id="navbar">
+    <div class="nav-brand">DK</div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#skills">Skills</a>
+      <a href="#goal">Goal</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ============================================================
+       SECTION 1 — HERO (full viewport)
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Animated canvas background -->
+    <canvas id="heroCanvas"></canvas>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+
+    <div class="hero-content">
+      <!-- Decorative line -->
+      <div class="reveal-line"></div>
+
+      <p class="subtitle reveal-up">Welcome to my research profile</p>
+
+      <h1 class="reveal-up">
+        <span class="word">Daniyal</span>
+        <span class="word italic accent">Kozyrev</span>
+      </h1>
+
+      <div class="divider reveal-up"></div>
+
+      <p class="tagline reveal-up">
+        Undergraduate Researcher &nbsp;·&nbsp; SRP 2026 &nbsp;·&nbsp; Innovator
+      </p>
+
+      <div class="hero-cta reveal-up">
+        <a href="#about" class="btn-scroll">
+          <span>Discover My Journey</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M7 13l5 5 5-5M7 6l5 5 5-5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2 — ABOUT ME (full viewport)
+       ============================================================ -->
+  <section class="section-full" id="about">
+    <div class="bg-text">ABOUT</div>
+
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-left">
+          <span class="section-num fade-right">01</span>
+          <h2 class="heading-anim fade-right">
+            Who <em>Am</em><br>I?
+          </h2>
+        </div>
+
+        <div class="split-right">
+          <div class="card-glass fade-left">
+            <div class="card-quote">
+              <span class="quote-mark">"</span>
+              <p>
+                I'm a curious mind exploring the boundaries of what machines can
+                understand. From asking big questions to building things from scratch —
+                research isn't just what I do, it's how I see the world.
+              </p>
+              <span class="quote-mark end">"</span>
+            </div>
+            <div class="card-details">
+              <div class="detail-item">
+                <span class="detail-label">Focus</span>
+                <span class="detail-value">Artificial Intelligence</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Program</span>
+                <span class="detail-value">SRP 2026</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Passion</span>
+                <span class="detail-value">Building the Future</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3 — RESEARCH INTERESTS
+       ============================================================ -->
+  <section class="section-full section-dark" id="research">
+    <div class="bg-text">RESEARCH</div>
+
+    <div class="container">
+      <span class="section-num fade-right">02</span>
+      <h2 class="heading-large heading-anim fade-up">
+        What <em>Drives</em> My Research
+      </h2>
+      <p class="section-desc fade-up">
+        The intersections I'm most excited to explore
+      </p>
+
+      <div class="research-grid">
+        <div class="research-card fade-up">
+          <div class="research-icon">🤖</div>
+          <h3>Artificial Intelligence</h3>
+          <p>Building systems that can reason, learn, and adapt to complex real-world environments.</p>
+          <div class="card-line"></div>
+        </div>
+
+        <div class="research-card fade-up" style="transition-delay: 0.1s">
+          <div class="research-icon">📊</div>
+          <h3>Machine Learning</h3>
+          <p>Designing models that extract meaningful patterns from data and make intelligent predictions.</p>
+          <div class="card-line"></div>
+        </div>
+
+        <div class="research-card fade-up" style="transition-delay: 0.2s">
+          <div class="research-icon">💬</div>
+          <h3>Natural Language Processing</h3>
+          <p>Teaching machines to understand, generate, and reason with human language.</p>
+          <div class="card-line"></div>
+        </div>
+
+        <div class="research-card fade-up" style="transition-delay: 0.3s">
+          <div class="research-icon">🧠</div>
+          <h3>Cognitive Science</h3>
+          <p>Bridging the gap between human cognition and computational models of intelligence.</p>
+          <div class="card-line"></div>
+        </div>
+
+        <div class="research-card fade-up" style="transition-delay: 0.4s">
+          <div class="research-icon">🔬</div>
+          <h3>Data Science</h3>
+          <p>Turning raw data into actionable insights through rigorous statistical methods.</p>
+          <div class="card-line"></div>
+        </div>
+
+        <div class="research-card fade-up" style="transition-delay: 0.5s">
+          <div class="research-icon">🌐</div>
+          <h3>Human-Computer Interaction</h3>
+          <p>Creating intuitive interfaces that make powerful technology accessible to everyone.</p>
+          <div class="card-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 4 — SKILLS TO LEARN
+       ============================================================ -->
+  <section class="section-full" id="skills">
+    <div class="bg-text">SKILLS</div>
+
+    <div class="container">
+      <div class="split-layout">
+        <div class="split-left">
+          <span class="section-num fade-right">03</span>
+          <h2 class="heading-anim fade-right">
+            The <em>Skills</em><br>I'm Building
+          </h2>
+          <p class="section-desc fade-right">
+            A growing roadmap of technical expertise I'm committed to mastering.
+          </p>
+        </div>
+
+        <div class="split-right">
+          <ul class="skill-timeline">
+            <li class="skill-item fade-right">
+              <span class="skill-check" style="--c: #f97316">01</span>
+              <div>
+                <h4>Python &amp; Data Analysis</h4>
+                <p>Pandas, NumPy, Matplotlib — the data scientist's toolkit</p>
+              </div>
+              <span class="skill-tag">Core</span>
+            </li>
+            <li class="skill-item fade-right" style="transition-delay: 0.1s">
+              <span class="skill-check" style="--c: #22d3ee">02</span>
+              <div>
+                <h4>Statistical Modeling</h4>
+                <p>Hypothesis testing, regression, Bayesian inference</p>
+              </div>
+              <span class="skill-tag">Foundation</span>
+            </li>
+            <li class="skill-item fade-right" style="transition-delay: 0.2s">
+              <span class="skill-check" style="--c: #a78bfa">03</span>
+              <div>
+                <h4>Technical Writing</h4>
+                <p>Clear papers, reproducible methods, compelling narratives</p>
+              </div>
+              <span class="skill-tag">Communication</span>
+            </li>
+            <li class="skill-item fade-right" style="transition-delay: 0.3s">
+              <span class="skill-check" style="--c: #34d399">04</span>
+              <div>
+                <h4>Git &amp; Version Control</h4>
+                <p>Collaborative workflows, branching strategies, code review</p>
+              </div>
+              <span class="skill-tag">Tooling</span>
+            </li>
+            <li class="skill-item fade-right" style="transition-delay: 0.4s">
+              <span class="skill-check" style="--c: #fb7185">05</span>
+              <div>
+                <h4>Deep Learning (PyTorch)</h4>
+                <p>Neural architectures, training pipelines, model deployment</p>
+              </div>
+              <span class="skill-tag">Advanced</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 5 — SRP 2026 GOAL (full viewport, dramatic)
+       ============================================================ -->
+  <section class="section-full section-goal" id="goal">
+    <canvas id="goalCanvas"></canvas>
+
+    <div class="container">
+      <div class="goal-content">
+        <span class="section-num fade-up" style="color: var(--accent-3)">04</span>
+
+        <h2 class="heading-hero heading-anim fade-up">
+          My <em>SRP 2026</em><br>North Star
+        </h2>
+
+        <div class="goal-statement fade-up">
+          <p>
+            Complete an independent research project that tackles a real-world
+            problem with AI, present findings at a conference, and lay the
+            groundwork for a lifelong career in research and innovation.
+          </p>
+        </div>
+
+        <div class="goal-milestones fade-up">
+          <div class="milestone">
+            <span class="milestone-dot"></span>
+            <div>
+              <strong>Research</strong>
+              <span>Design &amp; execute the study</span>
+            </div>
+          </div>
+          <div class="milestone">
+            <span class="milestone-dot"></span>
+            <div>
+              <strong>Publish</strong>
+              <span>Present at a conference</span>
+            </div>
+          </div>
+          <div class="milestone">
+            <span class="milestone-dot"></span>
+            <div>
+              <strong>Grow</strong>
+              <span>Build toward graduate studies</span>
+            </div>
+          </div>
+        </div>
+
+        <a href="#hero" class="btn-back-top fade-up">
+          Back to top
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-line"></div>
+    <p>Daniyal Kozyrev &nbsp;·&nbsp; SRP 2026</p>
+    <p class="footer-sub">Designed with purpose. Built with curiosity.</p>
+  </footer>
+
+  <!-- ============================================================
+       SCRIPTS — Scroll animations + canvas particles + navbar
+       ============================================================ -->
+  <script>
+    // ===== SCROLL REVEAL (Intersection Observer) =====
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, { threshold: 0.15, rootMargin: "0px 0px -50px 0px" });
+
+    document.querySelectorAll(
+      ".reveal-up, .reveal-left, .reveal-right," +
+      ".fade-up, .fade-left, .fade-right"
+    ).forEach(el => observer.observe(el));
+
+    // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+          // Close mobile nav if open
+          document.body.classList.remove("nav-open");
+        }
+      });
+    });
+
+    // ===== SCROLL PROGRESS BAR =====
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      document.getElementById("scrollProgress").style.width = progress + "%";
+    });
+
+    // ===== NAVBAR HIDE/SHOW ON SCROLL =====
+    let lastScroll = 0;
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      const current = window.scrollY;
+      if (current > lastScroll && current > 200) {
+        navbar.classList.add("nav-hidden");
+      } else {
+        navbar.classList.remove("nav-hidden");
+      }
+      // Add solid background after scrolling past hero
+      navbar.classList.toggle("nav-solid", current > 100);
+      lastScroll = current;
+    });
+
+    // ===== MOBILE NAV TOGGLE =====
+    document.getElementById("navToggle").addEventListener("click", () => {
+      document.body.classList.toggle("nav-open");
+    });
+
+    // ===== HERO CANVAS — PARTICLE NETWORK =====
+    (function() {
+      const canvas = document.getElementById("heroCanvas");
+      const ctx = canvas.getContext("2d");
+      let particles = [];
+      const PARTICLE_COUNT = 80;
+      const CONNECTION_DIST = 150;
+      let mouse = { x: null, y: null };
+
+      function resize() {
+        canvas.width = canvas.parentElement.offsetWidth;
+        canvas.height = canvas.parentElement.offsetHeight;
+      }
+      window.addEventListener("resize", resize);
+      resize();
+
+      canvas.parentElement.addEventListener("mousemove", e => {
+        const rect = canvas.getBoundingClientRect();
+        mouse.x = e.clientX - rect.left;
+        mouse.y = e.clientY - rect.top;
+      });
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.vx = (Math.random() - 0.5) * 0.6;
+          this.vy = (Math.random() - 0.5) * 0.6;
+          this.r = Math.random() * 2 + 1;
+        }
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+          if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
+          if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(108, 99, 255, 0.5)";
+          ctx.fill();
+        }
+      }
+
+      for (let i = 0; i < PARTICLE_COUNT; i++) {
+        particles.push(new Particle());
+      }
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        particles.forEach(p => { p.update(); p.draw(); });
+
+        // Draw connections
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < CONNECTION_DIST) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(108, 99, 255, ${0.15 * (1 - dist / CONNECTION_DIST)})`;
+              ctx.lineWidth = 0.8;
+              ctx.stroke();
+            }
+          }
+          // Connect to mouse
+          if (mouse.x !== null) {
+            const dx = particles[i].x - mouse.x;
+            const dy = particles[i].y - mouse.y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+            if (dist < 200) {
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(mouse.x, mouse.y);
+              ctx.strokeStyle = `rgba(34, 211, 238, ${0.3 * (1 - dist / 200)})`;
+              ctx.lineWidth = 1;
+              ctx.stroke();
+            }
+          }
+        }
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+
+    // ===== GOAL CANVAS — SLOW FLOATING ORBS =====
+    (function() {
+      const canvas = document.getElementById("goalCanvas");
+      const ctx = canvas.getContext("2d");
+      let orbs = [];
+
+      function resize() {
+        canvas.width = canvas.parentElement.offsetWidth;
+        canvas.height = canvas.parentElement.offsetHeight;
+      }
+      window.addEventListener("resize", resize);
+      resize();
+
+      class Orb {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.r = Math.random() * 80 + 40;
+          this.vx = (Math.random() - 0.5) * 0.3;
+          this.vy = (Math.random() - 0.5) * 0.3;
+          const colors = [
+            "rgba(108,99,255,0.08)",
+            "rgba(167,139,250,0.06)",
+            "rgba(34,211,238,0.06)"
+          ];
+          this.color = colors[Math.floor(Math.random() * colors.length)];
+        }
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+          if (this.x < -this.r) this.x = canvas.width + this.r;
+          if (this.x > canvas.width + this.r) this.x = -this.r;
+          if (this.y < -this.r) this.y = canvas.height + this.r;
+          if (this.y > canvas.height + this.r) this.y = -this.r;
+        }
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.r, 0, Math.PI * 2);
+          ctx.fillStyle = this.color;
+          ctx.fill();
+        }
+      }
+
+      for (let i = 0; i < 8; i++) orbs.push(new Orb());
+
+      function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        orbs.forEach(o => { o.update(); o.draw(); });
+        requestAnimationFrame(animate);
+      }
+      animate();
+    })();
+  </script>
+
+</body>
+</html>
